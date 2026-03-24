@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة التجارة الإلكترونية اليمنية - Yemen E-Commerce</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <h1>🇾🇪 Yemen E-Commerce</h1>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#products">المنتجات</a></li>
+                <li><a href="#categories">الفئات</a></li>
+                <li><a href="#about">عن المنصة</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+                <li class="auth-links">
+                    <button id="loginBtn" class="btn btn-primary">تسجيل الدخول</button>
+                    <button id="registerBtn" class="btn btn-secondary">إنشاء حساب</button>
+                </li>
+            </ul>
+            <div class="cart-icon">
+                <span>🛒</span>
+                <span id="cartCount" class="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>مرحباً بك في منصة التجارة الإلكترونية اليمنية</h2>
+            <p>اكتشف أفضل المنتجات بأسعار منافسة مع ضمان الجودة والأمان</p>
+            <button class="btn btn-primary btn-large">ابدأ التسوق الآن</button>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2>الفئات الرئيسية</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">📱</div>
+                    <h3>الهواتف الذكية</h3>
+                    <p>أحدث الهواتف من أفضل العلامات التجارية</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">💻</div>
+                    <h3>الإلكترونيات</h3>
+                    <p>أجهزة إلكترونية متنوعة وموثوقة</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">👕</div>
+                    <h3>الملابس</h3>
+                    <p>ملابس عصرية وأنيقة لكل الأذواق</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">👟</div>
+                    <h3>الأحذية</h3>
+                    <p>أحذية مريحة وأنيقة من ماركات عالمية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2>المنتجات المميزة</h2>
+            
+            <!-- Search and Filter -->
+            <div class="search-filter">
+                <input type="text" id="searchInput" placeholder="ابحث عن منتج...">
+                <select id="categoryFilter">
+                    <option value="">جميع الفئات</option>
+                    <option value="phones">الهواتف</option>
+                    <option value="electronics">الإلكترونيات</option>
+                    <option value="clothing">الملابس</option>
+                    <option value="shoes">الأحذية</option>
+                </select>
+                <select id="priceFilter">
+                    <option value="">جميع الأسعار</option>
+                    <option value="0-50000">0 - 50,000 ريال</option>
+                    <option value="50000-100000">50,000 - 100,000 ريال</option>
+                    <option value="100000-500000">100,000 - 500,000 ريال</option>
+                    <option value="500000+">أكثر من 500,000 ريال</option>
+                </select>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded here via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>لماذا تختار منصتنا؟</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>أمان عالي</h3>
+                    <p>تشفير كامل لبيانات العملاء والدفع</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💳</div>
+                    <h3>طرق دفع متعددة</h3>
+                    <p>الدفع عند الاستلام، المحافظ الرقمية، البطاقات</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>توصيل سريع</h3>
+                    <p>توصيل آمن وسريع إلى جميع أنحاء اليمن</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⭐</div>
+                    <h3>تقييمات حقيقية</h3>
+                    <p>تقييمات وآراء من عملاء حقيقيين</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>عن المنصة</h4>
+                    <p>منصة تجارة إلكترونية يمنية آمنة وموثوقة توفر أفضل المنتجات بأسعار منافسة</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#products">المنتجات</a></li>
+                        <li><a href="#about">عن المنصة</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تواصل معنا</h4>
+                    <p>📞 +967 1 234 567</p>
+                    <p>📧 info@yemen-ecommerce.com</p>
+                    <p>📍 صنعاء، اليمن</p>
+                </div>
+                <div class="footer-section">
+                    <h4>وسائل التواصل</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 منصة التجارة الإلكترونية اليمنية. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>تسجيل الدخول</h2>
+            <form id="loginForm">
+                <input type="email" placeholder="البريد الإلكتروني" required>
+                <input type="password" placeholder="كلمة المرور" required>
+                <button type="submit" class="btn btn-primary">دخول</button>
+            </form>
+            <p>ليس لديك حساب؟ <a href="#" id="switchToRegister">إنشاء حساب جديد</a></p>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>إنشاء حساب جديد</h2>
+            <form id="registerForm">
+                <input type="text" placeholder="الاسم الأول" required>
+                <input type="text" placeholder="الاسم الأخير" required>
+                <input type="email" placeholder="البريد الإلكتروني" required>
+                <input type="tel" placeholder="رقم الهاتف" required>
+                <input type="password" placeholder="كلمة المرور" required>
+                <input type="password" placeholder="تأكيد كلمة المرور" required>
+                <button type="submit" class="btn btn-primary">إنشاء حساب</button>
+            </form>
+            <p>هل لديك حساب بالفعل؟ <a href="#" id="switchToLogin">تسجيل الدخول</a></p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
